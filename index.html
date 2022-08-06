@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <!-- Main Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header-section -->
+        <div class="header">
+            <h1 class="f-20">INVOICE</h1>
+            <figure class="logo">
+                <img src="logo.jpg" class="img-fluid" alt="company logo">
+                <figcaption>CELERATE TECH</figcaption>
+            </figure>
+        </div>
+    
+        <!-- Invoice number and print/download section -->
+        <div class="section-white">
+            <h3 class="inv-no">INVOICE NUMBER <br><span>982083</span> </h3>
+            <button class="print-btn" id="printBtn">PRINT/DOWNLOAD</button>
+        </div>
+
+        <!-- Invoice details -->
+        <div class="invoiceDetail">
+            <hr>
+            <div class="clientDetail">
+                <p class="lead">INVOICE TO</p>
+                <div class="clientProfile">
+                    <h3 class="clientInfo" id="clientName">taiwo oluwole-young</h3>
+                    <h4 class="clientInfo" id="clientNumber">+2349039301080</h4>
+
+                </div>
+            </div>
+            <div class="bankDetail">
+                <p class="lead creditType">bank transfer</p>
+                <h4 id="bankName">standard chartered bank</h4>
+                <h4 id="accName">taiwo oluwole-young</h4>
+                <h4 id="bankNumber">5004940497</h4><!--If youre seeing this, Send me money-->
+            </div>
+            <hr>
+        </div>
+
+        <!-- Table-section -->
+        <div class="table">
+            <!-- Table content goes here! -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="nothing"></th>
+                        <th>Unit</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tr-1">Web Design</td>
+                        <td>2</td>
+                        <td>$2.00</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td class="tr-1">Web Development</td>
+                        <td>2</td>
+                        <td>$2.00</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td class="tr-1">Project Management</td>
+                        <td>2</td>
+                        <td>$2.00</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td class="tr-1">Branding</td>
+                        <td>2</td>
+                        <td>$2.00</td>
+                        <td>$4.00</td>
+                    </tr>
+                    <tr>
+                        <td class="tr-1">total</td>
+                        <td class="nothing"></td>
+                        <td class="nothing"></td>
+                        <td class="tr-1 total">$12:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <p>
+                <a href="#">celerate tech</a> | 
+                +2349012345678 |
+                <a href="mailto:celeratetech@gmail.com">celeratetech@gmail.com</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- JavaScript Embedded inside for the printBtn -->
+    <script>
+        let printBtn = document.getElementById('printBtn');
+        printBtn.addEventListener("click", function(){
+            print();
+        });
+    </script>
+</body>
+</html>

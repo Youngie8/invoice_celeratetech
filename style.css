@@ -1,0 +1,132 @@
+/* tags */
+html, body
+{
+    padding:0;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+footer{
+    text-align: center;
+    padding: 30px 0 10px 0;
+    color: #070b3b;
+    font-size: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+table{
+    width: 100%;
+}
+th{
+    background: #0071dc;
+    padding: 10px 0;
+    color: #070b3b;
+    text-transform: uppercase;
+    border-top: 4px solid #070b3b;
+    border-bottom: 4px solid #070b3b;
+}
+td
+{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+}
+/* classes */
+.clientDetail, .bankDetail
+{
+    text-transform: uppercase;
+    color: #070b3b;
+    line-height: 10%;
+    padding: 10px;
+}
+.container{
+    width: 90vw;
+    box-sizing: border-box;
+}
+.f-20
+{
+    position: absolute;
+    left: 30px;
+    top: 0;
+    font-size: 70px;
+    line-height: 10%;
+    
+}
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background: #070b3b;
+    color: #fff;
+    position: relative;
+    border-bottom: 8px solid #0071dc;
+}
+.img-fluid
+{
+    width: 100px;
+    height: auto;
+}
+.inv-no
+{
+    color: #0071dc;
+    font-size: 20px;
+}
+.invoiceDetail
+{
+    padding: 20px 0;
+}
+.lead
+{
+    font-weight: bolder;
+    color: #0071dc;
+    text-transform:uppercase;
+}
+.logo
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.nothing
+{
+    visibility: hidden;
+}
+.print-btn{
+    padding: 10px 20px;
+    background: #070b3b;
+    color: white;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.print-btn:hover{
+    background:#0071dc;
+}
+.section-white{
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 16px;
+}
+.tr-1{
+    background: #0071dc;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    color: #fff;
+    border-right:4px solid #070b3b ;
+    border-left:4px solid #070b3b ;
+    width: 20%;
+}
+@media(max-width:500px)
+{
+    .f-20{
+        font-size: 30px;
+    }
+}
