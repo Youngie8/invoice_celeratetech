@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   
+    <title>celerate Tech | Invoice</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon"> 
     <!-- Main Css -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,12 +23,11 @@
         <!-- Invoice number and print/download section -->
         <div class="section-white">
             <h3 class="inv-no">INVOICE NUMBER <br><span>982083</span> </h3>
-            <button class="print-btn" id="printBtn">PRINT/DOWNLOAD</button>
+            <button class="print-btn" id="printBtn">print / download</button>
         </div>
 
         <!-- Invoice details -->
         <div class="invoiceDetail">
-            <hr>
             <div class="clientDetail">
                 <p class="lead">INVOICE TO</p>
                 <div class="clientProfile">
@@ -41,9 +40,8 @@
                 <p class="lead creditType">bank transfer</p>
                 <h4 id="bankName">standard chartered bank</h4>
                 <h4 id="accName">taiwo oluwole-young</h4>
-                <h4 id="bankNumber">5004940497</h4><!--If youre seeing this, Send me money-->
+                <h4 id="bankNumber">5004940497</h4>
             </div>
-            <hr>
         </div>
 
         <!-- Table-section -->
@@ -52,13 +50,14 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="nothing"></th>
+                        <th class="services">Services</th>
                         <th>Unit</th>
                         <th>Price</th>
                         <th>Total</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- table body -->
                     <tr>
                         <td class="tr-1">Web Design</td>
                         <td>2</td>
@@ -83,11 +82,24 @@
                         <td>$2.00</td>
                         <td>$4.00</td>
                     </tr>
-                    <tr>
+                    <!-- total row -->
+                    <tr class="totalRow">
+                        <td class="tr-1">Subtotal</td>
+                        <td class=""></td>
+                        <td class=""></td>
+                        <td class="">$12:00</td>
+                    </tr>
+                    <tr class="totalRow">
+                        <td class="tr-1">Discount</td>
+                        <td class="">8%</td>
+                        <td class=""></td>
+                        <td class="">$0.96</td>
+                    </tr>
+                    <tr class="totalRow">
                         <td class="tr-1">total</td>
                         <td class="nothing"></td>
                         <td class="nothing"></td>
-                        <td class="tr-1 total">$12:00</td>
+                        <td class="total">$11:04</td>
                     </tr>
                 </tbody>
             </table>

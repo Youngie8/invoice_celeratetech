@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100&display=swap');
 /* tags */
+*{
+    box-sizing: border-box;
+    font-family: 'Livvic', sans-serif;
+}
 html, body
 {
     padding:0;
@@ -7,7 +12,6 @@ html, body
     height: 100vh;
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
 }
 footer{
     text-align: center;
@@ -19,6 +23,10 @@ footer a{
     text-decoration: none;
     color: inherit;
 }
+figcaption
+{
+    font-weight: bold;
+}
 table{
     width: 100%;
 }
@@ -27,18 +35,23 @@ th{
     padding: 10px 0;
     color: #070b3b;
     text-transform: uppercase;
-    border-top: 4px solid #070b3b;
-    border-bottom: 4px solid #070b3b;
+    /* border-top: 2px solid #070b3b;
+    border-bottom: 2px solid #070b3b; */
 }
 td
 {
-    text-align: center;
+    text-align: right;
+    padding:5px;
     background: rgba(0, 0, 0, 0.1);
 }
 /* classes */
-.clientDetail, .bankDetail
+.bankDetail
 {
-    text-transform: uppercase;
+    text-align: right;
+}
+ .bankDetail, .clientDetail
+{
+    text-transform: capitalize;
     color: #070b3b;
     line-height: 10%;
     padding: 10px;
@@ -81,6 +94,9 @@ td
 .invoiceDetail
 {
     padding: 20px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
 }
 .lead
 {
@@ -102,8 +118,10 @@ td
     padding: 10px 20px;
     background: #070b3b;
     color: white;
+    font-family: 'Livvic', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
     border: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .print-btn:hover{
     background:#0071dc;
@@ -115,18 +133,46 @@ td
     align-items: center;
     font-size: 16px;
 }
-.tr-1{
+.services
+{
+    background: #0071dc;
+    padding: 10px 0;
+    color: #070b3b;
+    text-transform: uppercase;
+    /* border-top: 2px solid #070b3b;
+    border-left: 2px solid #070b3b; */
+    border-bottom: none;
+}
+.total
+{
     background: #0071dc;
     padding: 10px 5px;
+    color: #070b3b;
+    font-weight: bolder;
+    text-align: right;
     text-transform: uppercase;
+    /* border-top: 2px solid #070b3b;
+    border-bottom: 2px solid #070b3b; */
+}
+.tr-1
+{
+    background: #0071dc;
+    padding: 10px 5px;
+    text-align: center;
+    text-transform: capitalize;
     color: #fff;
-    border-right:4px solid #070b3b ;
-    border-left:4px solid #070b3b ;
-    width: 20%;
+    /* border-right:2px solid #070b3b ;
+    border-left:2px solid #070b3b ; */
+    width: 30%;
 }
 @media(max-width:500px)
 {
-    .f-20{
+    .f-20
+    {
         font-size: 30px;
+    }
+    .invoiceDetail
+    {
+        display: initial;
     }
 }
